@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adarsh Lucus | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <style>
+    /* Reset and base styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #fefefe; color: #333; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    header, footer { background: #222; color: white; padding: 20px 0; text-align: center; }
+    nav { display: flex; justify-content: center; gap: 20px; background: #444; padding: 10px; }
+    nav a { color: white; font-weight: bold; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    .hero { display: flex; flex-direction: column; align-items: center; text-align: center; }
+    .hero img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; }
+    .skills span { display: inline-block; background: #007BFF; color: white; padding: 6px 12px; margin: 5px; border-radius: 5px; font-size: 14px; }
+   .skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.skill-item {
+  text-align: center;
+  color: white;
+}
+
+.skill-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+  filter: drop-shadow(0 0 5px #e6e6e6);
+  transition: transform 0.3s;
+}
+
+.skill-item img:hover {
+  transform: scale(1.1);
+}
+
+    .projects, .certifications { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white; }
+    .card img { width: 100%; height: auto; border-radius: 6px; }
+    form { display: flex; flex-direction: column; gap: 10px; }
+    form input, form textarea { padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+    form button { background: #007BFF; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer; }
+    .download-resume { text-align: center; margin-top: 20px; }
+    .download-resume a { background: #28a745; color: white; padding: 10px 20px; border-radius: 5px; display: inline-block; }
+    @media (max-width: 600px) {
+      nav { flex-direction: column; }
+      
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Adarsh Lucus</h1>
+    <p>Aspiring Developer | Lifelong Learner</p>
+  </header>
+
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="hero">
+    <img src="profile.jpg" alt="Profile Photo (placeholder)" />
+    <h2>Hello, I'm Adarsh Lucus</h2>
+    <p>Passionate about tech, coding, and building impactful solutions.</p>
+  </section>
+
+  <section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills-icons">
+    <div class="skill-item">
+      <img src="icons/figma.png" alt="Figma" />
+      <p>Figma</p>
+    </div>
+    <div class="skill-item">
+      <img src="icons/c.png" alt="C" />
+      <p>C</p>
+    </div>
+    <div class="skill-item">
+      <img src="icons/html.png" alt="HTML" />
+      <p>HTML</p>
+    </div>
+    <div class="skill-item">
+      <img src="icons/python.png" alt="Python" />
+      <p>Python</p>
+    </div>
+    <div class="skill-item">
+      <img src="icons/vscode.png" alt="VS Code" />
+      <p>VS Code</p>
+    </div>
+    <div class="skill-item">
+      <img src="icons/photoshop.png" alt="Photoshop" />
+      <p>Photoshop</p>
+    </div>
+  </div>
+</section>
+
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Bash Calculator</h3>
+        <p>Simple calculator using shell scripting.</p>
+        <small>Tech: Bash, Terminal</small><br>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certifications">
+      <div class="card">
+        <img src="https://www.hackerrank.com/certificates/iframe/fa017c28ce41" alt="Certification" />
+        <h4>Python for Everybody</h4>
+        <p>Hackerrank</p>
+        <a href="https://www.hackerrank.com/certificates/iframe/fa017c28ce41">View Certificate</a>
+      </div>
+      <div class="card">
+        <img src="cert2.jpg" alt="Certification" />
+        <h4>Figma </h4>
+        <p>Udemy</p>
+        <a href="#">View Certificate</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>Pursuing B.Tech in Cyber Security</strong><br>Amal Jyothi College of Engneering<br>2024 – 2028
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: <a href="mailto:adarshlucus06@gmail.com">adarshlucus06@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/adarsh-lucus
+      -300b17328?utm_source=share&utm_campaign=share_via&utm_content=
+      profile&utm_medium=android_app">linkedin.com/adarshlucus</a></p>
+    <p>GitHub: <a href="#">github.com/adarshlucus</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Adarsh Lucus. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
