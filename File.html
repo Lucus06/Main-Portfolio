@@ -7,11 +7,12 @@
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
   <style>
+    
     /* Reset and base styles */
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Segoe UI', sans-serif; background: #fefefe; color: #333; line-height: 1.6; }
     a { text-decoration: none; color: inherit; }
-    header, footer { background: #222; color: white; padding: 20px 0; text-align: center; }
+    header, footer { background: #222; color: rgb(255, 255, 255); padding: 20px 0; text-align: center; }
     nav { display: flex; justify-content: center; gap: 20px; background: #444; padding: 10px; }
     nav a { color: white; font-weight: bold; }
     section { padding: 40px 20px; max-width: 1000px; margin: auto; }
@@ -49,20 +50,52 @@
     form { display: flex; flex-direction: column; gap: 10px; }
     form input, form textarea { padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
     form button { background: #007BFF; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer; }
-    .download-resume { text-align: center; margin-top: 20px; }
-    .download-resume a { background: #28a745; color: white; padding: 10px 20px; border-radius: 5px; display: inline-block; }
-    @media (max-width: 600px) {
-      nav { flex-direction: column; }
-      
-    }
+  
+    .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+   header {
+  background-image: url('ajce.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+    
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Adarsh Lucus</h1>
-    <p>Aspiring Developer | Lifelong Learner</p>
-  </header>
+ <header id="home">
+  <div class="container">
+    <div class="header-content">
+      <img src="images/profile.jpg" alt="My Profile Photo" class="profile-photo" />
+      <div>
+        <h1> Adarsh Lucus</h1>
+        <h3>Aspiring Developer</h3>
+        <p>Welcome to my personal portfolio website.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
 
   <nav>
     <a href="#hero">Home</a>
@@ -74,7 +107,7 @@
   </nav>
 
   <section class="hero" id="hero">
-    <img src="profile.jpg" alt="Profile Photo (placeholder)" />
+    <img src="" alt="Profile Photo (placeholder)" />
     <h2>Hello, I'm Adarsh Lucus</h2>
     <p>Passionate about tech, coding, and building impactful solutions.</p>
   </section>
@@ -126,13 +159,13 @@
     <h2>Certifications</h2>
     <div class="certifications">
       <div class="card">
-        <img src="https://www.hackerrank.com/certificates/iframe/fa017c28ce41" alt="Certification" />
+        <img src="download.png" alt="Certification" />
         <h4>Python for Everybody</h4>
         <p>Hackerrank</p>
         <a href="https://www.hackerrank.com/certificates/iframe/fa017c28ce41">View Certificate</a>
       </div>
       <div class="card">
-        <img src="cert2.jpg" alt="Certification" />
+        <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-84f8006a-719b-437f-b2c6-982c6613854f.jpg" alt="Certification" />
         <h4>Figma </h4>
         <p>Udemy</p>
         <a href="#">View Certificate</a>
