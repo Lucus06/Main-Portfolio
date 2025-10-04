@@ -4,188 +4,158 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Adarsh Lucus | Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
-  <style>
-    
-    /* Reset and base styles */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', sans-serif; background: #fefefe; color: #333; line-height: 1.6; }
-    a { text-decoration: none; color: inherit; }
-    header, footer { background: #222; color: rgb(255, 255, 255); padding: 20px 0; text-align: center; }
-    nav { display: flex; justify-content: center; gap: 20px; background: #444; padding: 10px; }
-    nav a { color: white; font-weight: bold; }
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    .hero { display: flex; flex-direction: column; align-items: center; text-align: center; }
-    .hero img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; }
-    .skills span { display: inline-block; background: #007BFF; color: white; padding: 6px 12px; margin: 5px; border-radius: 5px; font-size: 14px; }
-   .skills-icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
-}
-
-.skill-item {
-  text-align: center;
-  color: white;
-}
-
-.skill-item img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 8px;
-  filter: drop-shadow(0 0 5px #e6e6e6);
-  transition: transform 0.3s;
-}
-
-.skill-item img:hover {
-  transform: scale(1.1);
-}
-
-    .projects, .certifications { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-    .card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white; }
-    .card img { width: 100%; height: auto; border-radius: 6px; }
-    form { display: flex; flex-direction: column; gap: 10px; }
-    form input, form textarea { padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
-    form button { background: #007BFF; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer; }
-  
-    .header-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding: 40px;
-  flex-wrap: wrap;
-}
-
-.profile-photo {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-}
-
-   header {
-  background-image: url('ajce.jpg');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
-}
-
-    
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
- <header id="home">
-  <div class="container">
-      <div>
-        <h1> Adarsh Lucus</h1>
-        <p>Welcome to my personal portfolio website.</p>
-    </div>
-  </div>
-</header>
-
-
+  <!-- Navigation -->
   <nav>
-    <a href="#hero">Home</a>
+    <a href="#home">Home</a>
+    <a href="#carousel">Showcase</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
     <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#education">Education</a>
+    <a href="#timeline">Timeline</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section class="hero" id="hero">
-    <img src="adarsh.jpeg" alt="Profile Photo (placeholder)" />
-    <h2>Hello, I'm Adarsh Lucus</h2>
-    <p>Passionate about tech, coding, and building impactful solutions.</p>
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <img src="adarsh.jpeg" alt="Adarsh Lucus" />
+    <h1>Hello, I'm Adarsh Lucus</h1>
+    <p>Cybersecurity Student | Tech Enthusiast | Developer</p>
+    <a href="#contact" class="btn">Contact Me</a>
   </section>
 
-  <section id="skills">
-  <h2>Technical Skills</h2>
-  <div class="skills-icons">
-    <div class="skill-item">
-      <img src="icons/figma.png" alt="Figma" />
-      <p>Figma</p>
+  <!-- About -->
+  <section class="about" id="about">
+    <img src="adarsh.jpeg" alt="About Photo" />
+    <div>
+      <h2>About Me</h2>
+      <p>
+        I'm pursuing B.Tech in Cyber Security at Amal Jyothi College of Engineering (2024–2028).  
+        Passionate about coding, cybersecurity, and creative problem-solving.
+      </p>
+      <a href="#" class="btn">Adarsh Lucus</a>
     </div>
-    <div class="skill-item">
-      <img src="icons/c.png" alt="C" />
-      <p>C</p>
-    </div>
-    <div class="skill-item">
-      <img src="icons/html.png" alt="HTML" />
-      <p>HTML</p>
-    </div>
-    <div class="skill-item">
-      <img src="icons/python.png" alt="Python" />
-      <p>Python</p>
-    </div>
-    <div class="skill-item">
-      <img src="icons/vscode.png" alt="VS Code" />
-      <p>VS Code</p>
-    </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Carousel -->
+  <section class="carousel" id="carousel">
+    <div class="card" style="background-image:url('images/Adarsh Lucus Hacktober.png');">
+      <span>Hacktober</span>
+      <div class="card-content">Building responsive sites with HTML, CSS & JS.</div>
+    </div>
+    <div class="card" style="background-image:url('images/Digital Workshop.jpg');">
+      <span>Digital Forensic Workshop</span>
+      <div class="card-content">Exploring ethical hacking & vulnerabilities.</div>
+    </div>
+    <div class="card" style="background-image:url('images/Game development.png');">
+      <span>Gaming Development</span>
+      <div class="card-content">Designing modern UI using Figma & prototypes.</div>
+    </div>
+    <div class="card" style="background-image:url('images/Nasa Hackathon.jpeg');">
+      <span>Nasa Space Apps</span>
+      <div class="card-content">Showcase of my technical projects.</div>
+    </div>
+    <div class="card" style="background-image:url('images/UI-UX workshop.jpg');">
+      <span>UI-UX</span>
+      <div class="card-content">Showcase of my technical projects.</div>
+    </div>
+  </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>Bash Calculator</h3>
-        <p>Simple calculator using shell scripting.</p>
-        <small>Tech: Bash, Terminal</small><br>
-        <a href="#">GitHub</a>
+  <!-- Services -->
+  <section id="services">
+    <h2 style="text-align:center;">My Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>Building responsive websites and interactive UI using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="service-card">
+        <h3>Cybersecurity</h3>
+        <p>Exploring ethical hacking, system security, and vulnerability testing.</p>
+      </div>
+      <div class="service-card">
+        <h3>UI/UX Design</h3>
+        <p>Designing modern user interfaces with Figma to deliver seamless experiences.</p>
       </div>
     </div>
   </section>
 
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <div class="certifications">
-      <div class="card">
-        <img src="download.png" alt="Certification" />
-        <h4>Python for Everybody</h4>
-        <p>Hackerrank</p>
-        <a href="https://www.hackerrank.com/certificates/iframe/fa017c28ce41">View Certificate</a>
-      </div>
-      <div class="card">
-        <img src="https://udemy-certificate.s3.amazonaws.com/image/UC-84f8006a-719b-437f-b2c6-982c6613854f.jpg" alt="Certification" />
-        <h4>Figma </h4>
-        <p>Udemy</p>
-        <a href="#">View Certificate</a>
-      </div>
+  <!-- Skills -->
+  <section id="skills" class="skills-section">
+    <h2>My Skills</h2>
+    <div class="underline"></div>
+    <div class="skill-bar"><span>HTML & CSS</span><div class="bar"><div class="progress" data-start="2024-04-01"></div></div></div>
+    <div class="skill-bar"><span>Bootstrap</span><div class="bar"><div class="progress" data-start="2024-08-01"></div></div></div>
+    <div class="skill-bar"><span>JavaScript</span><div class="bar"><div class="progress" data-start="2024-01-15"></div></div></div>
+    <div class="skill-bar"><span>Figma</span><div class="bar"><div class="progress" data-start="2024-05-01"></div></div></div>
+  </section>
+
+  <!-- Timeline -->
+  <section id="timeline">
+    <h2 style="text-align:center;">Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-item"><h4>2024</h4><p>Started B.Tech in Cyber Security at AJCE</p></div>
+      <div class="timeline-item"><h4>2025</h4><p>Developed multiple projects and explored ethical hacking</p></div>
     </div>
   </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <p><strong>Pursuing B.Tech in Cyber Security</strong><br>Amal Jyothi College of Engneering<br>2024 – 2028
-  </section>
-
+  <!-- Contact -->
   <section id="contact">
-    <h2>Contact Me</h2>
+    <h2 style="text-align:center;">Contact Me</h2>
     <form>
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
     <p>Email: <a href="mailto:adarshlucus06@gmail.com">adarshlucus06@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/adarsh-lucus
-      -300b17328?utm_source=share&utm_campaign=share_via&utm_content=
-      profile&utm_medium=android_app">linkedin.com/adarshlucus</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/adarshlucus</a></p>
     <p>GitHub: <a href="#">github.com/adarshlucus</a></p>
   </section>
 
-  
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h3>My Newsletter</h3>
+    <input type="email" placeholder="Enter your email" />
+    <button>Subscribe</button>
+  </section>
+
+  <script>
+    // Carousel expand/collapse
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('click', () => {
+        document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+      });
+    });
+
+    // Skills bars
+    function calculateExperience(startDate) {
+      const start = new Date(startDate);
+      const now = new Date();
+      let years = now.getFullYear() - start.getFullYear();
+      let months = now.getMonth() - start.getMonth();
+      if (months < 0) { years--; months += 12; }
+      return { years, months };
+    }
+    function updateSkillBars() {
+      const bars = document.querySelectorAll(".progress");
+      bars.forEach(bar => {
+        const startDate = bar.getAttribute("data-start");
+        const { years, months } = calculateExperience(startDate);
+        const totalMonths = years * 12 + months;
+        const width = Math.min(100, (totalMonths / 36) * 100);
+        bar.style.width = width + "%";
+        bar.textContent =
+          (years > 0 ? `${years} yr${years > 1 ? "s" : ""} ` : "") +
+          (months > 0 ? `${months} mos` : "");
+      });
+    }
+    document.addEventListener("DOMContentLoaded", updateSkillBars);
+  </script>
 
 </body>
 </html>
